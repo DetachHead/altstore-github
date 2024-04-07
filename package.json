@@ -1,0 +1,46 @@
+{
+  "name": "typescript-nodejs-project",
+  "version": "0.0.0",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint:check": "eslint .",
+    "lint:fix": "npm run lint:check -- --fix",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "build": "rimraf ./dist && tsc -p src/tsconfig.json",
+    "typecheck": "npm run build && tsc -p tsconfig.json && tsc -p tsconfig.lib-check.json",
+    "check": "npm run typecheck && npm run lint:check && npm run format:check && npm run test",
+    "main": "npm run build && node --enable-source-maps dist/main.js"
+  },
+  "keywords": [],
+  "author": "detachhead",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DetachHead/typescript-nodejs-project.git"
+  },
+  "devDependencies": {
+    "@detachhead/eslint-config": "^1",
+    "@jest/types": "^29.5.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/eslint": "^8.4.6",
+    "@types/jest": "^29.4.1",
+    "@types/node": "^20.6.2",
+    "@types/power-assert": "^1.5.3",
+    "@types/prettier": "^2.7.2",
+    "babel-preset-power-assert": "^3.0.0",
+    "espower-typescript": "^9.0.2",
+    "jest": "^29.5.0",
+    "power-assert": "^1.6.1",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typed-nodejs-assert": "^1.1.0",
+    "typescript": "^5.2.2"
+  }
+}
