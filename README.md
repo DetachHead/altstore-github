@@ -4,7 +4,7 @@ altstore-github is a http API to easily generate altstore sources from github re
 
 ## why use this?
 
-if you want automatic updates for an app but they don't have an altstore source, and instead only release new versions on github.
+if you want automatic updates for an app but the developer does not use an altstore source, and they instead only release new versions on github.
 
 ## how do i use this?
 
