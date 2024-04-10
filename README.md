@@ -14,7 +14,7 @@ first you'll need a few things:
 2. a github API access token
 3. the bundle ID for the app
 
-this document will show you how to get each of them
+this document will show you how to get each of these
 
 ### 1. altstore beta
 
