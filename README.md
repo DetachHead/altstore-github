@@ -43,7 +43,7 @@ currently, the stable version of altstore does not support custom sources, so yo
 
 ### 3. the app's bundle ID
 
-in order for the altstore-github to generate a valid altstore source, it needs to know the app's bundle ID.
+in order for altstore-github to generate a valid altstore source, it needs to know the app's bundle ID.
 
 1. go to the releases page for the repo you want to generate an altstore source from:
 
