@@ -1,5 +1,6 @@
 import { toNumber } from '@detachhead/ts-helpers/dist/functions/Number'
 import { Octokit } from '@octokit/rest'
+import cors from 'cors'
 import { format, parseISO } from 'date-fns'
 import express from 'express'
 import { Readable } from 'stream'
@@ -21,6 +22,8 @@ declare global {
 }
 
 const app = express()
+
+app.use(cors())
 
 app.use((request, response, next) => {
     const token = request.query['token']
