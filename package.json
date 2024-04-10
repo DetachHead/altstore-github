@@ -40,7 +40,9 @@
     "typescript": "^5.4.4"
   },
   "dependencies": {
+    "@detachhead/ts-helpers": "^16.2.0",
     "@octokit/rest": "^20.1.0",
+    "date-fns": "^3.6.0",
     "express": "^4.19.2"
   }
 }

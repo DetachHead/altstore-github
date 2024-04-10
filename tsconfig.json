@@ -25,7 +25,7 @@
         "noUncheckedIndexedAccess": true,
         "types": ["@types/node"],
         "esModuleInterop": true,
-        "skipLibCheck": false,
+        "skipLibCheck": true, // https://github.com/DetachHead/ts-helpers/issues/255
         "forceConsistentCasingInFileNames": true,
         "noPropertyAccessFromIndexSignature": true,
         "noImplicitOverride": true,
