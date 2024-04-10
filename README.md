@@ -25,7 +25,9 @@ currently, the stable version of altstore does not support custom sources, so yo
 3. run AltServer and wait for the icon to appear on your system tray
 4. plug your device into your PC (this step is not necessary if wifi sync is enabled for your device in itunes)
 5. hold down the shift key and click the altserver tray icon, select "Sideload .ipa", then pick your device:
-   ![](./readme_images/image1.png)
+
+    ![](./readme_images/image1.png)
+
 6. select the `.ipa` file you downloaded
 7. enter your apple ID & password, then wait for it to install
 
@@ -33,18 +35,24 @@ currently, the stable version of altstore does not support custom sources, so yo
 
 1. if you don't have one already, you'll need to [create a github account](https://github.com/signup)
 2. navigate to [the access token settings](https://github.com/settings/tokens/new) and enter a name for your token.
+
     - if the github repo you want to generate a source from is _public_, **do not check any boxes**. the default access is all it needs
     - if the github repo is _private_, **check the "repo" checkbox**:
-      ![](./readme_images/image2.png)
+
+        ![](./readme_images/image2.png)
 
 ### 3. the app's bundle ID
 
 in order for the altstore-github to generate a valid altstore source, it needs to know the app's bundle ID.
 
 1. go to the releases page for the repo you want to generate an altstore source from:
-   ![](./readme_images/image3.png)
+
+    ![](./readme_images/image3.png)
+
 2. download the `.ipa` file from the assets in one of the releases (it doesn't matter which one, the bundle ID should never change between versions):
-   ![](image.png)
+
+    ![](./readme_images/image4.png)
+
 3. upload it to [ScarletParse](https://debianarch64.github.io/ScarletParseWE/)
 4. copy the value from the "BundleID" field
 
@@ -64,11 +72,16 @@ http://hostname/alfiecg24/TrollInstallerX/com.Alfie.TrollInstallerX?token=xxxxxx
 
 1. open AltStore on your device
 2. press the "Sources" tab:
-   ![](./readme_images/image5.png)
+
+    ![](./readme_images/image5.png)
+
 3. press the `+` icon:
-   ![](./readme_images/image6.png)
+
+    ![](./readme_images/image6.png)
+
 4. enter the source URL you created then press the `+` icon:
-   ![](./readme_images/image7.png)
+
+    ![](./readme_images/image7.png)
 
 ### done
 
