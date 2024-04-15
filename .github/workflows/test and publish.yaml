@@ -3,7 +3,7 @@ on:
     - push
 
 env:
-    node_version: 16.9.1
+    node_version: 20
 
 jobs:
     build-and-test:
@@ -15,14 +15,7 @@ jobs:
                   node-version: ${{ env.node_version }}
             - run: npm ci
             - run: npm run check
-    deploy:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v1
-              with:
-                  node-version: ${{ env.node_version }}
-            - run: npm ci
+            - run: npm run build
             - run: ./node_modules/.bin/serverless deploy
         env:
             AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
