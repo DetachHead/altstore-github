@@ -16,7 +16,6 @@ jobs:
             - run: npm ci
             - run: npm run check
     deploy:
-        if: github.ref == 'refs/heads/master'
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
