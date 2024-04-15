@@ -1,6 +1,8 @@
 {
-  "name": "typescript-nodejs-project",
+  "name": "altstore-github",
+  "type": "module",
   "version": "0.0.0",
+  "private": true,
   "files": [
     "dist",
     "src"
@@ -19,10 +21,6 @@
   "keywords": [],
   "author": "detachhead",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DetachHead/typescript-nodejs-project.git"
-  },
   "devDependencies": {
     "@detachhead/eslint-config": "^1.5.0",
     "@jest/types": "^29.5.0",
@@ -36,6 +34,7 @@
     "jest": "^29.5.0",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
+    "serverless": "^3.38.0",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.4.4"
@@ -45,6 +44,7 @@
     "@octokit/rest": "^20.1.0",
     "cors": "^2.8.5",
     "date-fns": "^3.6.0",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "serverless-http": "^3.2.0"
   }
 }
