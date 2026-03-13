@@ -1,4 +1,4 @@
-import type { JestConfigWithTsJest } from 'ts-jest/dist/types'
+import type { JestConfigWithTsJest } from 'ts-jest/dist/types.js'
 
 const config: JestConfigWithTsJest = {
     preset: 'ts-jest',
@@ -7,9 +7,6 @@ const config: JestConfigWithTsJest = {
     globals: {
         'ts-jest': {
             tsconfig: './tests/tsconfig.json',
-            babelConfig: {
-                presets: ['power-assert'],
-            },
         },
     },
     detectOpenHandles: true,
